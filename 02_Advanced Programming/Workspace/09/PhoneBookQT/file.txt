@@ -1,0 +1,37 @@
+phone book:
+dan
+contact:
+CELL
+1
+WORK
+1
+HOME
+1
+contact end
+dani
+contact:
+CELL
+1
+WORK
+1
+HOME
+1
+contact end
+danial
+contact:
+CELL
+0
+WORK
+1
+HOME
+1
+man
+1
+nan
+1
+contact end
+phone book end
+favorite list:
+danial
+dani
+favorite list end
