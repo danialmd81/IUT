@@ -1,0 +1,91 @@
+{
+    "users length": 3,
+    "books length": 4,
+    "users": {
+        "user a": {
+            "name": "a",
+            "family_name": "a",
+            "ID_code": "a",
+            "username": "a",
+            "password": "a",
+            "user books length": 1,
+            "penalty": 15,
+            "reserve_time.to_iso_string()": "not-a-date-time",
+            "value0": "s"
+        },
+        "user s": {
+            "name": "s",
+            "family_name": "s",
+            "ID_code": "s",
+            "username": "s",
+            "password": "s",
+            "user books length": 0,
+            "penalty": 0,
+            "reserve_time.to_iso_string()": "20240106T004413"
+        },
+        "user d": {
+            "name": "d",
+            "family_name": "d",
+            "ID_code": "d",
+            "username": "d",
+            "password": "d",
+            "user books length": 2,
+            "penalty": 0,
+            "reserve_time.to_iso_string()": "20240111T004420",
+            "value0": "d",
+            "value1": "a"
+        }
+    },
+    "books": {
+        "book a": {
+            "title": "a",
+            "genre": "a",
+            "date_of_publication": "a",
+            "author_name": "a",
+            "user_who_borrowed_book": "",
+            "assigned": true,
+            "assign_time.to_iso_string()": "20240111T005707",
+            "reserve_queue length": 0
+        },
+        "book s": {
+            "title": "s",
+            "genre": "s",
+            "date_of_publication": "s",
+            "author_name": "s",
+            "user_who_borrowed_book": "",
+            "assigned": true,
+            "assign_time.to_iso_string()": "20240111T004346",
+            "reserve_queue length": 1,
+            "value0": {
+                "name": "s",
+                "family_name": "s",
+                "ID_code": "s",
+                "username": "s",
+                "password": "s",
+                "user books length": 0,
+                "penalty": 0,
+                "reserve_time.to_iso_string()": "20240111T004413"
+            }
+        },
+        "book d": {
+            "title": "d",
+            "genre": "d",
+            "date_of_publication": "d",
+            "author_name": "d",
+            "user_who_borrowed_book": "",
+            "assigned": true,
+            "assign_time.to_iso_string()": "20240111T005659",
+            "reserve_queue length": 0
+        },
+        "book f": {
+            "title": "f",
+            "genre": "f",
+            "date_of_publication": "f",
+            "author_name": "f",
+            "user_who_borrowed_book": "",
+            "assigned": false,
+            "assign_time.to_iso_string()": "not-a-date-time",
+            "reserve_queue length": 0
+        }
+    }
+}
