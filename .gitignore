@@ -517,3 +517,7 @@ compile_commands.json
 *creator.user*
 
 *_qmlcache.qrc
+
+# Proteus
+Project Backups/
+*.pdsprj.*
