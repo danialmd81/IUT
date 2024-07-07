@@ -1,0 +1,3 @@
+[submodule "04_Computer-Architecture/mano-computer"]
+	path = 04_Computer-Architecture/mano-computer
+	url = https://github.com/danialmd81/Mano-Computer.git
