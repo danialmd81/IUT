@@ -10,3 +10,6 @@
 [submodule "04-database/project/spotify"]
 	path = 04-database/project/spotify
 	url = https://github.com/danialmd81/DB-Project.git
+[submodule "04-database/spotify"]
+	path = 04-database/spotify
+	url = https://github.com/danialmd81/DB-Project.git
