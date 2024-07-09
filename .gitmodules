@@ -7,3 +7,12 @@
 [submodule "04/04-computer-architecture/mano-computer"]
 	path = 04/04-computer-architecture/mano-computer
 	url = https://github.com/danialmd81/mano-computer
+[submodule "04/04-database/spotify"]
+	path = 04/04-database/spotify
+	url = https://github.com/danialmd81/spotify
+[submodule "04/04-computer-networks/malware"]
+	path = 04/04-computer-networks/malware
+	url = https://github.com/danialmd81/malware
+[submodule "04/04-computer-networks/web-application"]
+	path = 04/04-computer-networks/web-application
+	url = https://github.com/danialmd81/web-application
