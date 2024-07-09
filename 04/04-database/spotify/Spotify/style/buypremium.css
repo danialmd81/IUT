@@ -1,0 +1,60 @@
+.card {
+    background-color: #191414;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.card-header {
+    background-color: #1DB954;
+    padding: 20px;
+}
+
+.card-header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h2 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.card-body p {
+    font-size: 14px;
+    margin: 0 0 20px 0;
+}
+
+.btn-primary {
+    background-color: #1DB954;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #14833B;
+}
+
+.wallet-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #1ed760;
+    color: #FFFFFF;
+    border-radius: 25px;
+    font-size: 1rem;
+    text-align: center;
+}

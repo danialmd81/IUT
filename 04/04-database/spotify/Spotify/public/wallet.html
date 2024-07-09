@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet</title>
+    <link rel="stylesheet" href="../style/home.css">
+    <link rel="stylesheet" href="../style/wallet.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul id="menu"></ul>
+        </div>
+        <div class="content">
+            <h1>Wallet</h1>
+            <div class="wallet-info">
+                <p>Your balance: <span id="balance">$0.00</span></p>
+            </div>
+            <div class="wallet-actions">
+                <button id="addMoney">Add Money</button>
+                <button id="takeMoney">Take Money</button>
+            </div>
+            <div class="wallet-input" id="walletInput" style="display: none;">
+                <input type="number" id="moneyValue" placeholder="Enter amount">
+                <button id="submitMoney">Submit</button>
+            </div>
+            <div class="wallet-message" id="walletMessage" style="display: none;"></div>
+        </div>
+    </div>
+    <script src="../js/home.js"></script>
+    <script src="../js/wallet.js"></script>
+</body>
+
+</html>
