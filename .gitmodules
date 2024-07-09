@@ -13,3 +13,9 @@
 [submodule "04-database/spotify"]
 	path = 04-database/spotify
 	url = https://github.com/danialmd81/DB-Project.git
+[submodule "04-computer-networks/04-computer-networks/malware"]
+	path = 04-computer-networks/04-computer-networks/malware
+	url = https://github.com/danialmd81/Malware
+[submodule "04-computer-networks/malware"]
+	path = 04-computer-networks/malware
+	url = https://github.com/danialmd81/Malware
