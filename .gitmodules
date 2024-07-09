@@ -1,0 +1,9 @@
+[submodule "02/02-advanced-programming/skull-king"]
+	path = 02/02-advanced-programming/skull-king
+	url = https://github.com/danialmd81/skull-king
+[submodule "03/03-data-structure/library"]
+	path = 03/03-data-structure/library
+	url = https://github.com/danialmd81/library
+[submodule "04/04-computer-architecture/mano-computer"]
+	path = 04/04-computer-architecture/mano-computer
+	url = https://github.com/danialmd81/mano-computer
