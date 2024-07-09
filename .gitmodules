@@ -1,21 +1,18 @@
-[submodule "04-computer-architecture/mano-computer"]
+[submodule "04/04-computer-architecture/mano-computer"]
 path = 04/04-computer-architecture/mano-computer
 url = https://github.com/danialmd81/Mano-Computer.git
 [submodule "02-advanced-programming/skull-king"]
-path = 02/02-advanced-programming/skull-king
+path = 02-advanced-programming/skull-king
 url = https://github.com/danialmd81/Skull-King.git
-[submodule "03-data-structure/library"]
+[submodule "03/03-data-structure/library"]
 path = 03/03-data-structure/library
 url = https://github.com/danialmd81/Library.git
-[submodule "04-database/project/spotify"]
+[submodule "04/04-database/project/spotify"]
 path = 04/04-database/project/spotify
 url = https://github.com/danialmd81/DB-Project.git
-[submodule "04-database/spotify"]
+[submodule "04/04-database/spotify"]
 path = 04/04-database/spotify
 url = https://github.com/danialmd81/DB-Project.git
-[submodule "04-computer-networks/04-computer-networks/malware"]
-path = 04/04-computer-networks/04-computer-networks/malware
-url = https://github.com/danialmd81/Malware
-[submodule "04-computer-networks/malware"]
+[submodule "04/04-computer-networks/malware"]
 path = 04/04-computer-networks/malware
 url = https://github.com/danialmd81/Malware
