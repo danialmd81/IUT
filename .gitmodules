@@ -7,3 +7,6 @@
 [submodule "04/computer-architecture/mano-computer"]
 	path = 04/computer-architecture/mano-computer
 	url = https://github.com/danialmd81/mano-computer
+[submodule "04/database/spotify"]
+	path = 04/database/spotify
+	url = https://github.com/danialmd81/spotify
