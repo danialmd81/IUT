@@ -1,3 +1,6 @@
 [submodule "03/data-structure/library"]
 	path = 03/data-structure/library
 	url = https://github.com/danialmd81/library
+[submodule "02/advanced-programming/skull-king"]
+	path = 02/advanced-programming/skull-king
+	url = https://github.com/danialmd81/skull-king
