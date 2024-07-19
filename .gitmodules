@@ -13,3 +13,6 @@
 [submodule "04/computer-networks/web-application"]
 	path = 04/computer-networks/web-application
 	url = https://github.com/danialmd81/web-application
+[submodule "04/computer-networks/malware"]
+	path = 04/computer-networks/malware
+	url = https://github.com/danialmd81/malware
