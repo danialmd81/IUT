@@ -4,3 +4,6 @@
 [submodule "02/advanced-programming/skull-king"]
 	path = 02/advanced-programming/skull-king
 	url = https://github.com/danialmd81/skull-king
+[submodule "04/computer-architecture/mano-computer"]
+	path = 04/computer-architecture/mano-computer
+	url = https://github.com/danialmd81/mano-computer
