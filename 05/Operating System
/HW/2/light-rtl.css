@@ -1,0 +1,102 @@
+/* General styles for the document */
+body {
+  font-family: 'IRKoodak';
+  direction: rtl;
+  text-align: right;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: #ffffff;
+  /* Light background */
+  color: #121212;
+  /* Dark text color */
+}
+
+/* Styles for headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: right;
+  color: #000000;
+  /* Black text for headers */
+}
+
+/* Styles for paragraphs */
+p {
+  text-align: right;
+  color: #121212;
+  /* Dark text color */
+}
+
+/* Styles for lists */
+ul,
+ol {
+  text-align: right;
+  padding-right: 20px;
+  color: #121212;
+  /* Dark text color */
+}
+
+/* Styles for code blocks and plaintext */
+pre,
+code,
+.plaintext {
+  direction: ltr;
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f5f5f5;
+  /* Light background for code blocks */
+  color: #121212;
+  /* Dark text color */
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+/* Styles for inline code */
+code {
+  background-color: #f5f5f5;
+  /* Light background for inline code */
+  color: #121212;
+  /* Dark text color */
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* Styles for blockquotes */
+blockquote {
+  border-right: 5px solid #cccccc;
+  /* Light border for blockquotes */
+  padding-right: 10px;
+  margin-right: 20px;
+  color: #555555;
+  /* Dark gray text for blockquotes */
+}
+
+/* Styles for tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  /* Light background for tables */
+  color: #121212;
+  /* Dark text color */
+}
+
+th,
+td {
+  border: 1px solid #cccccc;
+  /* Light border for table cells */
+  padding: 8px;
+  text-align: right;
+}
+
+th {
+  background-color: #f5f5f5;
+  /* Light background for table headers */
+  color: #121212;
+  /* Dark text color */
+}

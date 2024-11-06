@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>‫‪HW1_Mobini_40130023</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">
+body {
+font-family: 'IRKoodak';
+direction: rtl;
+text-align: right;
+line-height: 1.6;
+margin: 20px;
+background-color: #ffffff;
+
+color: #121212;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+text-align: right;
+color: #000000;
+
+}
+
+p {
+text-align: right;
+color: #121212;
+
+}
+
+ul,
+ol {
+text-align: right;
+padding-right: 20px;
+color: #121212;
+
+}
+
+pre,
+code,
+.plaintext {
+direction: ltr;
+text-align: left;
+font-family: 'Courier New', Courier, monospace;
+background-color: #f5f5f5;
+
+color: #121212;
+
+padding: 10px;
+border-radius: 5px;
+overflow-x: auto;
+}
+
+code {
+background-color: #f5f5f5;
+
+color: #121212;
+
+padding: 2px 4px;
+border-radius: 3px;
+}
+
+blockquote {
+border-right: 5px solid #cccccc;
+
+padding-right: 10px;
+margin-right: 20px;
+color: #555555;
+
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-bottom: 20px;
+background-color: #ffffff;
+
+color: #121212;
+
+}
+th,
+td {
+border: 1px solid #cccccc;
+
+padding: 8px;
+text-align: right;
+}
+th {
+background-color: #f5f5f5;
+
+color: #121212;
+
+}</style>
+</head>
+<body>
+<h1 id="تکلیف-اول">تکلیف اول</h1>
+<h2 id="تفاوت-معماری-وان-نیومن-و-هاروارد">1. تفاوت معماری وان نیومن و
+هاروارد</h2>
+<h3 id="معماری-وان-نیومن">معماری وان نیومن</h3>
+<ul>
+<li><strong>حافظه مشترک</strong>: برنامه‌ها و داده‌ها در یک حافظه مشترک
+ذخیره می‌شوند.</li>
+<li><strong>مسیر داده مشترک</strong>: یک مسیر داده برای انتقال
+دستورالعمل‌ها و داده‌ها استفاده می‌شود.</li>
+<li><strong>سادگی طراحی</strong>: طراحی ساده‌تر و ارزان‌تر است.</li>
+</ul>
+<h4 id="مزایا">مزایا</h4>
+<ul>
+<li><strong>سادگی و هزینه کمتر</strong>: به دلیل استفاده از یک حافظه و
+مسیر داده مشترک، طراحی و پیاده‌سازی آن ساده‌تر و ارزان‌تر است.</li>
+<li><strong>انعطاف‌پذیری</strong>: می‌تواند برای انواع مختلف برنامه‌ها
+استفاده شود.</li>
+</ul>
+<h3 id="معماری-هاروارد">معماری هاروارد</h3>
+<ul>
+<li><strong>حافظه جداگانه</strong>: برنامه‌ها و داده‌ها در حافظه‌های
+جداگانه ذخیره می‌شوند.</li>
+<li><strong>مسیر داده جداگانه</strong>: مسیرهای داده جداگانه برای انتقال
+دستورالعمل‌ها و داده‌ها وجود دارد.</li>
+<li><strong>کارایی بالاتر</strong>: به دلیل جداسازی حافظه و مسیر داده،
+کارایی بالاتری دارد.</li>
+</ul>
+<h4 id="مزایا-1">مزایا</h4>
+<ul>
+<li><strong>کارایی بالاتر</strong>: به دلیل جداسازی حافظه و مسیر داده،
+می‌تواند به طور همزمان به دستورالعمل‌ها و داده‌ها دسترسی داشته باشد که منجر
+به کارایی بالاتر می‌شود.</li>
+<li><strong>امنیت بیشتر</strong>: جداسازی حافظه برنامه و داده‌ها می‌تواند
+امنیت بیشتری فراهم کند.</li>
+</ul>
+<p>این تفاوت‌ها و مزایا باعث می‌شوند که هر کدام از این معماری‌ها در شرایط و
+کاربردهای خاصی مناسب‌تر باشند.</p>
+<h2 id="تفاوتهای-بین-میکروکنترلر-و-میکروپروسسور">2. تفاوت‌های بین
+میکروکنترلر و میکروپروسسور</h2>
+<h3 id="تفاوتهای-اصلی-بین-معماری-میکروکنترلر-و-میکروپروسسور-چیست">تفاوت‌های
+اصلی بین معماری میکروکنترلر و میکروپروسسور چیست؟</h3>
+<ul>
+<li><strong>میکروکنترلر</strong>:
+<ul>
+<li><strong>یکپارچگی بالا</strong>: شامل CPU، حافظه (RAM و ROM)، و
+ورودی/خروجی‌ها (I/O) در یک تراشه واحد است.</li>
+<li><strong>طراحی برای کاربردهای خاص</strong>: معمولاً برای کنترل
+دستگاه‌های خاص و وظایف مشخص طراحی شده‌اند.</li>
+<li><strong>مصرف انرژی کم</strong>: به دلیل طراحی بهینه برای وظایف خاص،
+مصرف انرژی کمتری دارند.</li>
+</ul></li>
+<li><strong>میکروپروسسور</strong>:
+<ul>
+<li><strong>انعطاف‌پذیری بالا</strong>: شامل CPU است و نیاز به اجزای
+خارجی مانند حافظه و I/O دارد.</li>
+<li><strong>طراحی برای کاربردهای عمومی</strong>: معمولاً برای انجام وظایف
+عمومی و پردازش‌های پیچیده طراحی شده‌اند.</li>
+<li><strong>مصرف انرژی بیشتر</strong>: به دلیل نیاز به اجزای خارجی و
+پردازش‌های پیچیده، مصرف انرژی بیشتری دارند.</li>
+</ul></li>
+</ul>
+<h3 id="کاربردهای-عملی">کاربردهای عملی</h3>
+<ul>
+<li><strong>میکروکنترلر</strong>:
+<ul>
+<li><strong>کاربرد</strong>: کنترل دستگاه‌های خانگی مانند ماشین
+لباسشویی.</li>
+<li><strong>توضیح</strong>: میکروکنترلرها به دلیل یکپارچگی بالا و مصرف
+انرژی کم، برای کنترل دستگاه‌های خانگی که نیاز به وظایف مشخص و ساده دارند،
+مناسب‌تر هستند.</li>
+</ul></li>
+<li><strong>میکروپروسسور</strong>:
+<ul>
+<li><strong>کاربرد</strong>: کامپیوترهای شخصی.</li>
+<li><strong>توضیح</strong>: میکروپروسسورها به دلیل انعطاف‌پذیری بالا و
+توانایی انجام پردازش‌های پیچیده، برای کامپیوترهای شخصی که نیاز به انجام
+وظایف متنوع و پیچیده دارند، مناسب‌تر هستند.</li>
+</ul></li>
+</ul>
+<h3 id="مصرف-انرژی-و-هزینه">مصرف انرژی و هزینه</h3>
+<ul>
+<li><strong>مصرف انرژی و هزینه کمتر</strong>: میکروکنترلرها به دلیل
+طراحی بهینه برای وظایف خاص، مصرف انرژی و هزینه کمتری دارند.</li>
+<li><strong>کاربردهای مهم</strong>: این تفاوت‌ها در کاربردهایی که نیاز به
+مصرف انرژی کم و هزینه پایین دارند، مانند دستگاه‌های قابل حمل و سیستم‌های
+تعبیه‌شده، اهمیت پیدا می‌کنند.</li>
+</ul>
+<h3 id="جدول-تبدیل-اعداد">3. جدول تبدیل اعداد</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Hexadecimal</th>
+<th>Binary</th>
+<th>Decimal</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>4FD</td>
+<td>10011111101</td>
+<td>1277</td>
+</tr>
+<tr class="even">
+<td>111100110001</td>
+<td>111100110001</td>
+<td>3873</td>
+</tr>
+<tr class="odd">
+<td>8A5D</td>
+<td>1000101001011101</td>
+<td>35421</td>
+</tr>
+<tr class="even">
+<td>2024</td>
+<td>10000000100100</td>
+<td>8228</td>
+</tr>
+</tbody>
+</table>
+<h2 id="محاسبه-عبارتها">4. محاسبه عبارت‌ها</h2>
+<h3 id="i.-0b1111101-0b110010101">I. 0b1111101 + 0b110010101</h3>
+<p><strong>جمع دودویی:</strong></p>
+<p>ابتدا اعداد را زیر هم قرار می‌دهیم:</p>
+<pre class="plaintext"><code>  110010101
++   1111101
+-----------</code></pre>
+<p>از سمت راست به چپ جمع می‌کنیم:</p>
+<pre class="plaintext"><code>1 + 1 = 10 (0 و 1 به ستون بعدی)
+0 + 0 + 1 = 1
+1 + 1 = 10 (0 و 1 به ستون بعدی)
+1 + 0 + 1 = 10 (0 و 1 به ستون بعدی)
+1 + 1 = 10 (0 و 1 به ستون بعدی)
+1 + 0 + 1 = 10 (0 و 1 به ستون بعدی)
+1 + 1 = 10 (0 و 1 به ستون بعدی)
+1 + 1 = 10 (0 و 1 به ستون بعدی)</code></pre>
+<p>نتیجه نهایی:</p>
+<pre class="plaintext"><code>  1000010010</code></pre>
+<p>بنابراین، 0b1111101 + 0b110010101 = 0b1000010010</p>
+<h3 id="ii.-0x4b4-0x5fd">II. 0x4B4 + 0x5FD</h3>
+<p><strong>جمع هگزادسیمال:</strong></p>
+<p>ابتدا اعداد را زیر هم قرار می‌دهیم:</p>
+<pre class="plaintext"><code>  0x4B4
++ 0x5FD
+--------</code></pre>
+<p>از سمت راست به چپ جمع می‌کنیم:</p>
+<pre class="plaintext"><code>D + 4 = 11 + 4 = 15 (F)
+F + B = 15 + 11 = 26 (1A، 1 به ستون بعدی)
+5 + 4 + 1 = 10 (A)</code></pre>
+<p>نتیجه نهایی:</p>
+<pre class="plaintext"><code>  0xAB1</code></pre>
+<p>بنابراین، 0x4B4 + 0x5FD = 0xAB1</p>
+<h3 id="iii.-0x2b7---0x59e">III. 0x2B7 - 0x59E</h3>
+<p><strong>تفریق هگزادسیمال:</strong></p>
+<p>ابتدا اعداد را زیر هم قرار می‌دهیم:</p>
+<pre class="plaintext"><code>  0x2B7
+- 0x59E
+--------</code></pre>
+<p>از سمت راست به چپ تفریق می‌کنیم:</p>
+<pre class="plaintext"><code>7 - E (نیاز به قرض گرفتن داریم)
+17 - E = 9
+B - 9 = 2
+2 - 5 (نیاز به قرض گرفتن داریم)
+12 - 5 = 7</code></pre>
+<p>نتیجه نهایی:</p>
+<pre class="plaintext"><code>  -0x2E7</code></pre>
+<p>بنابراین، 0x2B7 - 0x59E = -0x2E7</p>
+<h3 id="iv.-0b1011000011---0xf1-به-روش-مکمل-دو">IV. 0b1011000011 - 0xF1
+(به روش مکمل دو)</h3>
+<p><strong>تبدیل 0 xF1 به مکمل دو:</strong></p>
+<p>ابتدا عدد هگزادسیمال را به دودویی تبدیل می‌کنیم:</p>
+<pre class="plaintext"><code>0xF1 = 0b11110001</code></pre>
+<p>سپس عدد دودویی را به مکمل دو تبدیل می‌کنیم:</p>
+<ol type="1">
+<li>معکوس کردن بیت‌ها:</li>
+</ol>
+<pre class="plaintext"><code>0b11110001 -&gt; 0b00001110</code></pre>
+<ol start="2" type="1">
+<li>اضافه کردن 1 به نتیجه:</li>
+</ol>
+<pre class="plaintext"><code>0b00001110 + 1 = 0b00001111</code></pre>
+<p>بنابراین، مکمل دو عدد 0xF1 برابر است با 0b00001111.</p>
+<p><strong>انجام عملیات تفریق:</strong></p>
+<ol type="1">
+<li>انجام عملیات جمع با مکمل دو:</li>
+</ol>
+<pre class="plaintext"><code>  0b1011000011
++ 0b00001111
+-------------</code></pre>
+<ol start="2" type="1">
+<li>جمع از سمت راست به چپ:</li>
+</ol>
+<pre class="plaintext"><code>1 + 1 = 10 (0 و 1 به ستون بعدی)
+1 + 1 = 10 (0 و 1 به ستون بعدی)
+0 + 1 + 1 = 10 (0 و 1 به ستون بعدی)
+0 + 1 + 1 = 10 (0 و 1 به ستون بعدی)
+0 + 0 + 1 = 1
+1 + 0 = 1
+0 + 0 = 0
+1 + 0 = 1
+1 + 0 = 1</code></pre>
+<p>نتیجه نهایی:</p>
+<pre class="plaintext"><code>  0b110000010</code></pre>
+<p>بنابراین، 0b1011000011 - 0xF1 = 0b110000010</p>
+<h3 id="v.-0x4b8---0x1a3-به-روش-دلخواه">V. 0x4B8 - 0x1A3 (به روش
+دلخواه)</h3>
+<p><strong>تفریق هگزادسیمال:</strong></p>
+<p>ابتدا اعداد را زیر هم قرار می‌دهیم:</p>
+<pre class="plaintext"><code>  0x4B8
+- 0x1A3
+--------</code></pre>
+<p>از سمت راست به چپ تفریق می‌کنیم:</p>
+<pre class="plaintext"><code>8 - 3 = 5
+B - A = 1
+4 - 1 = 3</code></pre>
+<p>نتیجه نهایی:</p>
+<pre class="plaintext"><code>  0x315</code></pre>
+<p>بنابراین، 0x4B8 - 0x1A3 = 0x315</p>
+<h4 id="مراحل-طراحی">5. مراحل طراحی</h4>
+<p><strong>تحلیل محدوده آدرس</strong>:</p>
+<ul>
+<li>محدوده آدرس: 3200H تا 41FFH</li>
+<li>ظرفیت حافظه: 4K = 4096 بایت = 1000H بایت</li>
+<li>بیت‌های آدرس مورد نیاز: 12 بیت (برای 4K)</li>
+</ul>
+<p><strong>محاسبه خطوط آدرس</strong>:</p>
+<ul>
+<li>آدرس شروع: 3200H = 0011 0010 0000 0000</li>
+<li>آدرس پایان: 41FFH = 0100 0001 1111 1111</li>
+</ul>
+<p><strong>طراحی مدار</strong>:</p>
+<pre class="plaintext"><code>A15 -------|
+A14 -------|
+A13 -------|AND&gt;----|
+A12 -------|        |
+      |        |
+A11 ------\         |
+A10 -------| Half   |
+A9  ------/ Adder   |-----&gt; CS (Chip Select)
+      |        |
+A8  --------|        |
+        |           |
+| 3200H-41FFH |  |  |
+| ----------- |</code></pre>
+<h4 id="توضیحات">توضیحات</h4>
+<ul>
+<li>نیاز به بررسی بیت‌های بالای آدرس (A15-A12) برای تشخیص محدوده</li>
+<li>استفاده از Half-Adder برای مقایسه بیت‌های میانی</li>
+<li>خروجی CS فقط در محدوده آدرس مورد نظر فعال می‌شود</li>
+<li>بیت‌های پایین (A11-A0) مستقیماً به حافظه متصل می‌شوند</li>
+</ul>
+<h2 id="مقایسه-معماری-risc-و-cisc">6. مقایسه معماری RISC و CISC</h2>
+<h3 id="معماری-risc-reduced-instruction-set-computer">معماری RISC
+(Reduced Instruction Set Computer)</h3>
+<ul>
+<li><strong>تعداد دستورات کمتر</strong>: مجموعه دستورات کوچک و
+ساده.</li>
+<li><strong>اجرای سریع‌تر</strong>: هر دستورالعمل معمولاً در یک سیکل ساعت
+اجرا می‌شود.</li>
+<li><strong>طراحی ساده‌تر</strong>: طراحی ساده‌تر و بهینه‌تر برای پردازش
+سریع.</li>
+<li><strong>استفاده بیشتر از حافظه</strong>: به دلیل تعداد دستورات کمتر،
+برنامه‌ها ممکن است طولانی‌تر باشند و حافظه بیشتری مصرف کنند.</li>
+<li><strong>مثال‌ها</strong>: ARM، MIPS</li>
+</ul>
+<h3 id="معماری-cisc-complex-instruction-set-computer">معماری CISC
+(Complex Instruction Set Computer)</h3>
+<ul>
+<li><strong>تعداد دستورات بیشتر</strong>: مجموعه دستورات بزرگ و
+پیچیده.</li>
+<li><strong>اجرای کندتر</strong>: برخی از دستورالعمل‌ها ممکن است چندین
+سیکل ساعت برای اجرا نیاز داشته باشند.</li>
+<li><strong>طراحی پیچیده‌تر</strong>: طراحی پیچیده‌تر و نیاز به مدارهای
+کنترلی بیشتر.</li>
+<li><strong>استفاده کمتر از حافظه</strong>: به دلیل تعداد دستورات بیشتر،
+برنامه‌ها معمولاً کوتاه‌تر هستند و حافظه کمتری مصرف می‌کنند.</li>
+<li><strong>مثال‌ها</strong>: x86، VAX</li>
+</ul>
+<h3 id="مقایسه-و-انتخاب">مقایسه و انتخاب</h3>
+<ul>
+<li><strong>کارایی</strong>: معماری RISC به دلیل اجرای سریع‌تر
+دستورالعمل‌ها، در کاربردهایی که نیاز به پردازش سریع دارند، مناسب‌تر
+است.</li>
+<li><strong>پیچیدگی</strong>: معماری CISC به دلیل پیچیدگی بیشتر، در
+کاربردهایی که نیاز به دستورات پیچیده و متنوع دارند، مناسب‌تر است.</li>
+<li><strong>مصرف انرژی</strong>: معماری RISC به دلیل طراحی ساده‌تر و
+اجرای سریع‌تر، مصرف انرژی کمتری دارد و برای دستگاه‌های قابل حمل مناسب‌تر
+است.</li>
+<li><strong>انعطاف‌پذیری</strong>: معماری CISC به دلیل مجموعه دستورات
+بزرگ‌تر، انعطاف‌پذیری بیشتری دارد و برای کاربردهای عمومی مناسب‌تر است.</li>
+</ul>
+<h3 id="نتیجهگیری">نتیجه‌گیری</h3>
+<p>انتخاب بین RISC و CISC بستگی به نیازهای خاص کاربرد دارد. اگر نیاز به
+پردازش سریع و مصرف انرژی کم دارید، معماری RISC مناسب‌تر است. اگر نیاز به
+انعطاف‌پذیری و دستورات پیچیده دارید، معماری CISC مناسب‌تر است.</p>
+<h3 id="برنامه-به-زبان-اسمبلی-برای-تبدیل-مقدار-0xfd-به-دسیمال-و-ذخیره-ارقام-در-آدرسهای-مشخص-شده">7.
+برنامه به زبان اسمبلی برای تبدیل مقدار 0xfd به دسیمال و ذخیره ارقام در
+آدرس‌های مشخص شده</h3>
+<pre class="assembly"><code>  ORG 0x1000      
+  LDA 0x315       
+  MOV B, A        </code></pre>
+<ul>
+<li><code>ORG 0x1000</code>: تعیین آدرس شروع برنامه در حافظه.</li>
+<li><code>LDA 0x315</code>: بارگذاری مقدار موجود در آدرس 0x315 به داخل
+رجیستر A.</li>
+<li><code>MOV B, A</code>: کپی کردن مقدار رجیستر A به رجیستر B.</li>
+</ul>
+<pre class="assembly"><code>  MVI C, 0x0A
+  CALL DIVIDE
+  STA 0x322</code></pre>
+<ul>
+<li><code>MVI C, 0x0A</code>: مقدار 10 را به رجیستر C منتقل می‌کند.</li>
+<li><code>CALL DIVIDE</code>: فراخوانی زیرروال تقسیم برای تقسیم مقدار در
+رجیستر A بر 10.</li>
+<li><code>STA 0x322</code>: ذخیره نتیجه تقسیم در آدرس 0x322.</li>
+</ul>
+<pre class="assembly"><code>  MOV A, B
+  CALL DIVIDE
+  STA 0x323</code></pre>
+<ul>
+<li><code>MOV A, B</code>: کپی کردن مقدار رجیستر B به رجیستر A.</li>
+<li><code>CALL DIVIDE</code>: فراخوانی زیرروال تقسیم برای تقسیم مقدار در
+رجیستر A بر 10.</li>
+<li><code>STA 0x323</code>: ذخیره نتیجه تقسیم در آدرس 0x323.</li>
+</ul>
+<pre class="assembly"><code>  MOV A, B
+  STA 0x324</code></pre>
+<ul>
+<li><code>MOV A, B</code>: کپی کردن مقدار رجیستر B به رجیستر A.</li>
+<li><code>STA 0x324</code>: ذخیره مقدار رجیستر A در آدرس 0x324.</li>
+</ul>
+<p>پایان برنامه:</p>
+<pre class="assembly"><code>  HLT</code></pre>
+<ul>
+<li><code>HLT</code>: توقف اجرای برنامه.</li>
+</ul>
+<p>زیرروال تقسیم:</p>
+<pre class="assembly"><code>DIVIDE:
+  MOV D, A
+  MVI A, 0x00
+DIV_LOOP:
+  CMP C
+  JC DIV_END
+  SUB C
+  INR A
+  JMP DIV_LOOP
+DIV_END:
+  MOV B, D
+  RET</code></pre>
+<ul>
+<li><code>DIVIDE:</code>: شروع زیرروال تقسیم.</li>
+<li><code>MOV D, A</code>: کپی کردن مقدار رجیستر A به رجیستر D.</li>
+<li><code>MVI A, 0x00</code>: مقداردهی رجیستر A به صفر.</li>
+<li><code>DIV_LOOP:</code>: شروع حلقه تقسیم.</li>
+<li><code>CMP C</code>: مقایسه مقدار رجیستر A با رجیستر C.</li>
+<li><code>JC DIV_END</code>: اگر مقدار A کمتر از C باشد، به
+<code>DIV_END</code> بپر.</li>
+<li><code>SUB C</code>: کم کردن مقدار C از A.</li>
+<li><code>INR A</code>: افزایش مقدار A به اندازه 1.</li>
+<li><code>JMP DIV_LOOP</code>: بازگشت به ابتدای حلقه.</li>
+<li><code>DIV_END:</code>: پایان حلقه تقسیم.</li>
+<li><code>MOV B, D</code>: بازگرداندن مقدار اصلی A به رجیستر B.</li>
+<li><code>RET</code>: بازگشت از زیرروال.</li>
+</ul>
+<p>این برنامه مقدار 0xfd را از آدرس 0x315 بارگذاری کرده و آن را به
+دسیمال تبدیل می‌کند. سپس ارقام دسیمال را در آدرس‌های 0x322، 0x323 و 0x324
+ذخیره می‌کند. رقم کم ارزش در آدرس 0x322، رقم میانی در آدرس 0x323 و رقم با
+ارزش بالا در آدرس 0x324 ذخیره می‌شود.</p>
+<h3 id="برنامه-به-زبان-اسمبلی-برای-محاسبه-فاکتوریل-یک-عدد-صحیح-بین-0-تا-5">8.
+برنامه به زبان اسمبلی برای محاسبه فاکتوریل یک عدد صحیح بین 0 تا 5</h3>
+<pre class="assembly"><code>  ORG 0x1000      
+  LDA 0x400        
+  CALL FACTORIAL   
+  STA 0x401        
+  HLT             </code></pre>
+<ul>
+<li><code>ORG 0x1000</code>: شروع برنامه از آدرس 0x1000.</li>
+<li><code>LDA 0x400</code>: بارگذاری مقدار از آدرس 0x400 به رجیستر
+A.</li>
+<li><code>CALL FACTORIAL</code>: فراخوانی زیرروال محاسبه فاکتوریل.</li>
+<li><code>STA 0x401</code>: ذخیره نتیجه در آدرس 0x401.</li>
+<li><code>HLT</code>: توقف اجرای برنامه.</li>
+</ul>
+<pre class="assembly"><code>FACTORIAL:
+  MOV B, A        
+  MVI A, 0x01     
+  MOV C, A        </code></pre>
+<ul>
+<li><code>MOV B, A</code>: کپی مقدار رجیستر A به رجیستر B.</li>
+<li><code>MVI A, 0x01</code>: مقدار 1 را به رجیستر A منتقل می‌کند.</li>
+<li><code>MOV C, A</code>: کپی مقدار رجیستر A به رجیستر C.</li>
+</ul>
+<pre class="assembly"><code>CHECK_ZERO:
+  CMP B           
+  JZ RETURN_ONE   </code></pre>
+<ul>
+<li><code>CMP B</code>: مقایسه مقدار رجیستر A با رجیستر B.</li>
+<li><code>JZ RETURN_ONE</code>: اگر مقدار B صفر باشد، به برچسب
+RETURN_ONE پرش می‌کند.</li>
+</ul>
+<pre class="assembly"><code>CALC_FACTORIAL:
+  CMP B           
+  JZ END_FACTORIAL
+  MOV D, B        
+  DEC D           
+  MOV B, D        
+  MOV D, C        
+  MOV A, D        
+  MOV E, B       
+  CALL MULTIPLY   
+  MOV C, A        
+  JMP CALC_FACTORIAL </code></pre>
+<ul>
+<li><code>CMP B</code>: مقایسه مقدار رجیستر A با رجیستر B.</li>
+<li><code>JZ END_FACTORIAL</code>: اگر مقدار B صفر باشد، به برچسب
+END_FACTORIAL پرش می‌کند.</li>
+<li><code>MOV D, B</code>: کپی مقدار رجیستر B به رجیستر D.</li>
+<li><code>DEC D</code>: کاهش مقدار رجیستر D به اندازه 1.</li>
+<li><code>MOV B, D</code>: کپی مقدار رجیستر D به رجیستر B.</li>
+<li><code>MOV D, C</code>: کپی مقدار رجیستر C به رجیستر D.</li>
+<li><code>MOV A, D</code>: کپی مقدار رجیستر D به رجیستر A.</li>
+<li><code>MOV E, B</code>: کپی مقدار رجیستر B به رجیستر E.</li>
+<li><code>CALL MULTIPLY</code>: فراخوانی زیرروال ضرب.</li>
+<li><code>MOV C, A</code>: کپی مقدار رجیستر A به رجیستر C.</li>
+<li><code>JMP CALC_FACTORIAL</code>: پرش به برچسب CALC_FACTORIAL برای
+تکرار محاسبات.</li>
+</ul>
+<pre class="assembly"><code>END_FACTORIAL:
+  MOV A, C        
+  RET            </code></pre>
+<ul>
+<li><code>MOV A, C</code>: کپی مقدار رجیستر C به رجیستر A.</li>
+<li><code>RET</code>: بازگشت از زیرروال.</li>
+</ul>
+<pre class="assembly"><code>RETURN_ONE:
+  MVI A, 0x01     
+  RET            </code></pre>
+<ul>
+<li><code>MVI A, 0x01</code>: مقدار 1 را به رجیستر A منتقل می‌کند.</li>
+<li><code>RET</code>: بازگشت از زیرروال.</li>
+</ul>
+<pre class="assembly"><code>MULTIPLY:
+  MVI H, 0x00    
+  MVI L, 0x00    
+  MOV D, A        
+  MOV E, B        
+  CALL MUL_LOOP   
+  MOV A, L        
+  RET             </code></pre>
+<ul>
+<li><code>MVI H, 0x00</code>: مقدار 0 را به رجیستر H منتقل می‌کند.</li>
+<li><code>MVI L, 0x00</code>: مقدار 0 را به رجیستر L منتقل می‌کند.</li>
+<li><code>MOV D, A</code>: کپی مقدار رجیستر A به رجیستر D.</li>
+<li><code>MOV E, B</code>: کپی مقدار رجیستر B به رجیستر E.</li>
+<li><code>CALL MUL_LOOP</code>: فراخوانی زیرروال حلقه ضرب.</li>
+<li><code>MOV A, L</code>: کپی مقدار رجیستر L به رجیستر A.</li>
+<li><code>RET</code>: بازگشت از زیرروال.</li>
+</ul>
+<pre class="assembly"><code>MUL_LOOP:
+  MOV A, D        
+  ADD L           
+  MOV L, A        
+  MOV A, H       
+  ADC H           
+  MOV H, A        
+  DEC E           
+  JNZ MUL_LOOP    
+  RET             </code></pre>
+<ul>
+<li><code>MOV A, D</code>: کپی مقدار رجیستر D به رجیستر A.</li>
+<li><code>ADD L</code>: جمع مقدار رجیستر L با رجیستر A.</li>
+<li><code>MOV L, A</code>: کپی مقدار رجیستر A به رجیستر L.</li>
+<li><code>MOV A, H</code>: کپی مقدار رجیستر H به رجیستر A.</li>
+<li><code>ADC H</code>: جمع مقدار رجیستر H با رجیستر A به همراه بیت
+حمل.</li>
+<li><code>MOV H, A</code>: کپی مقدار رجیستر A به رجیستر H.</li>
+<li><code>DEC E</code>: کاهش مقدار رجیستر E به اندازه 1.</li>
+<li><code>JNZ MUL_LOOP</code>: اگر مقدار E صفر نباشد، به برچسب MUL_LOOP
+پرش می‌کند.</li>
+<li><code>RET</code>: بازگشت از زیرروال.</li>
+</ul>
+<p>این برنامه مقدار ورودی را از آدرس 0x400 می‌خواند و فاکتوریل آن را
+محاسبه می‌کند. نتیجه در آدرس 0x401 ذخیره می‌شود. اگر عدد ورودی صفر باشد،
+تابع مقدار 1 را برمی‌گرداند.</p>
+</body>
+</html>
